@@ -107,6 +107,82 @@ footer {
   color: var(--oscuro);
 }
 
+/* componentes */
+.page__header {
+  margin-left: 12.8rem;
+  margin-bottom: 9.6rem;
+  color: var(--acido);
+  font-family: var(--tipo-primaria);
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn--secundario {
+  display: flex;
+  width: 14.6rem;
+  height: 4.6rem;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3rem;
+}
+
+.btn--acido {
+  width: 20.7rem;
+  height: 6.5rem;
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--acido);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 3rem;
+  border: 0.1rem solid var(--acido);
+}
+
+.btn--acido:hover {
+  color: var(--oscuro);
+  background-color: var(--acido);
+}
+
+.btn--azul {
+  border: 0.2rem solid var(--azul-claro1);
+  color: var(--azul-claro1);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn--azul:hover {
+  border: 0.2rem solid var(--acido);
+  background-color: var(--acido);
+  color: var(--azul-oscuro1);
+}
+
+.btn--blanco {
+  border: 0.2rem solid var(--claro);
+  color: var(--claro);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn--blanco:hover {
+  background-color: var(--claro);
+  color: var(--azul-oscuro1);
+}
+
 /* inicio */
 .hero {
   padding-inline: 12.8rem;
@@ -139,28 +215,6 @@ footer {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 120%;
-}
-
-.btn--acido {
-  width: 20.7rem;
-  height: 6.5rem;
-  padding: 1.6rem 3.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--acido);
-  text-align: center;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 3rem;
-  border: 0.1rem solid var(--acido);
-}
-
-.btn--acido:hover {
-  color: var(--oscuro);
-  background-color: var(--acido);
 }
 
 .nosotros-inicio {
@@ -279,33 +333,6 @@ footer {
   line-height: 120%;
 }
 
-.btn--secundario {
-  display: flex;
-  width: 14.6rem;
-  height: 4.6rem;
-  padding: 1.2rem 2.4rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 3rem;
-}
-
-.btn--azul {
-  border: 0.2rem solid var(--azul-claro1);
-  color: var(--azul-claro1);
-  text-align: center;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.btn--azul:hover {
-  border: 0.2rem solid var(--acido);
-  background-color: var(--acido);
-  color: var(--azul-oscuro1);
-}
-
 .proyectos-inicio {
   width: auto;
   height: 40.4rem;
@@ -338,21 +365,6 @@ footer {
   line-height: 120%;
 }
 
-.btn--blanco {
-  border: 0.2rem solid var(--claro);
-  color: var(--claro);
-  text-align: center;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.btn--blanco:hover {
-  background-color: var(--claro);
-  color: var(--azul-oscuro1);
-}
-
 .empresas {
   padding-inline: 12.8rem;
   margin-bottom: 27.3rem;
@@ -368,17 +380,6 @@ footer {
 .proyectos {
   display: flex;
   flex-direction: column;
-}
-
-.proyectos__header {
-  margin-left: 12.8rem;
-  margin-bottom: 9.6rem;
-  color: var(--acido);
-  font-family: var(--tipo-primaria);
-  font-size: 9.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 .proyectos__container {
@@ -444,20 +445,86 @@ footer {
 }
 
 /* servicios */
-.servicios {
+.servicios__container {
+  margin-bottom: 10rem;
+  padding-inline: 12.8rem;
   display: flex;
   flex-direction: column;
+  gap: 12rem;
 }
 
-.servicios__header {
-  margin-left: 12.8rem;
-  margin-bottom: 9.6rem;
-  color: var(--acido);
+/* cards */
+.servicios-card__header {
   font-family: var(--tipo-primaria);
-  font-size: 9.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  color: var(--acido);
+  font-size: 4rem;
+}
+
+.servicios-card__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.servicios__card--left {
+  width: 100%;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 2.4rem;
+}
+.servicios__card--left .servicios-card__content-left {
+  max-width: 60rem;
+  min-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.servicios__card--left .servicios__img--brand {
+  height: auto;
+  width: auto;
+  background-image: url("../assets/img/servicios/servicios1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem 0 0 2rem;
+}
+.servicios__card--left .servicios__img--web {
+  height: auto;
+  width: auto;
+  background-image: url("../assets/img/servicios/servicios3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.servicios__card--right {
+  width: 100%;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  text-align: right;
+  gap: 2.4rem;
+}
+.servicios__card--right .servicios-card__content-right {
+  max-width: 60rem;
+  min-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.4rem;
+  justify-self: end;
+  align-self: center;
+}
+.servicios__card--right .servicios__img--product {
+  height: auto;
+  width: auto;
+  background-image: url("../assets/img/servicios/servicios2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 2rem 2rem 0;
 }
 
 /* nosotros */
@@ -466,47 +533,14 @@ footer {
   flex-direction: column;
 }
 
-.nosotros__header {
-  margin-left: 12.8rem;
-  margin-bottom: 9.6rem;
-  color: var(--acido);
-  font-family: var(--tipo-primaria);
-  font-size: 9.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 /* blog */
 .blog {
   display: flex;
   flex-direction: column;
 }
 
-.blog__header {
-  margin-left: 12.8rem;
-  margin-bottom: 9.6rem;
-  color: var(--acido);
-  font-family: var(--tipo-primaria);
-  font-size: 9.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 /* contacto */
 .contacto {
   display: flex;
   flex-direction: column;
-}
-
-.contacto__header {
-  margin-left: 12.8rem;
-  margin-bottom: 9.6rem;
-  color: var(--acido);
-  font-family: var(--tipo-primaria);
-  font-size: 9.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }/*# sourceMappingURL=styles.css.map */
