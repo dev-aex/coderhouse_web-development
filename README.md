@@ -5,7 +5,7 @@ Repositorio de mi proyecto final del curso Desarrollo Web en CorderHouse
 
 ## Wireframes
 
-![](./wireframes/pre-entrega1_antonio-estrella_wriframes.png)
+![](./wireframes/wireframes.jpg)
 
 ## 🛠 Tecnologías
 HTML, CSS y SASS.
