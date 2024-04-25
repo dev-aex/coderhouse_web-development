@@ -261,7 +261,8 @@ footer {
 
 .nosotros-inicio {
   width: auto;
-  height: 837px;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 24.3rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -330,8 +331,10 @@ footer {
 
 .servicios-inicio__cards-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 8rem;
+  flex-wrap: wrap;
 }
 
 .servicios-inicio__card {
@@ -414,8 +417,10 @@ footer {
 
 .empresas__logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* proyectos */
@@ -839,5 +844,55 @@ article .nosotros__photos .nosotros__img3 {
     justify-content: flex-end;
     background-color: transparent;
     padding: 0;
+  }
+}
+@media (max-width: 868px) {
+  .nosotros-inicio {
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 24.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nosotros-inicio__img {
+    width: 100%;
+    height: 45rem;
+  }
+  .nosotros-inicio__contenido {
+    padding-top: 0;
+    padding-right: 0;
+    padding: 6rem;
+    grid-row: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .proyectos-inicio {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .proyectos-logo {
+    width: 109px;
+    height: 176px;
+  }
+  .proyectos-inicio__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .proyectos-inicio__titular {
+    text-align: center;
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
