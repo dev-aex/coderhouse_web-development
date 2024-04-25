@@ -43,7 +43,7 @@
     <!-- header -->
     <header class="nav-bar">
       <section>
-        <a href="../index.html">
+        <a href="./index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -59,7 +59,27 @@
           </svg>
         </a>
       </section>
-      <nav>
+      <a id="nav-burger" class="nav-burger block">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 17H21M3 12H21M3 7H21"
+              stroke="#D9EB0F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </a>
+      <nav id="nav-wraper" class="nav-wraper hidden">
+        <!-- Links -->
         <ul class="header__links-container">
           <li>
             <a class="links--blanco" href="../index.html">Inicio</a>
@@ -78,6 +98,28 @@
             <a class="links--blanco" href="./contacto.html">Contacto</a>
           </li>
         </ul>
+        <!-- Close btn -->
+        <a id="nav-close" class="close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_1597_4)">
+              <path
+                d="M2.93 17.0698C1.9749 16.1474 1.21308 15.0439 0.688986 13.8239C0.164896 12.6038 -0.110966 11.2916 -0.122504 9.96385C-0.134042 8.63605 0.118975 7.31926 0.621783 6.09029C1.12459 4.86133 1.86712 3.74481 2.80605 2.80589C3.74498 1.86696 4.8615 1.12443 6.09046 0.621618C7.31942 0.11881 8.63622 -0.134207 9.96401 -0.122669C11.2918 -0.111131 12.604 0.164731 13.824 0.688821C15.0441 1.21291 16.1475 1.97473 17.07 2.92984C18.8916 4.81586 19.8995 7.34188 19.8767 9.96385C19.854 12.5858 18.8023 15.0939 16.9482 16.948C15.0941 18.8021 12.586 19.8538 9.96401 19.8766C7.34204 19.8994 4.81602 18.8914 2.93 17.0698ZM11.4 9.99984L14.23 7.16984L12.82 5.75984L10 8.58984L7.17 5.75984L5.76 7.16984L8.59 9.99984L5.76 12.8298L7.17 14.2398L10 11.4098L12.83 14.2398L14.24 12.8298L11.41 9.99984H11.4Z"
+                fill="#D9EB0F"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1597_4">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
       </nav>
     </header>
     <!-- main -->
@@ -341,4 +383,5 @@
       </section>
     </footer>
   </body>
+  <script src="../scripts.js"></script>
 </html>

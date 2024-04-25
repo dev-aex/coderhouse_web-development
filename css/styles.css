@@ -20,7 +20,44 @@ body {
   background: linear-gradient(180deg, #082735 -3.21%, #030d12 103.67%);
 }
 
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+#nav-burger {
+  cursor: pointer;
+}
+
 /* header */
+.close-btn {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-wraper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0076a3;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-bar {
   padding-inline: 12.8rem;
   margin-top: 9.6rem;
@@ -29,7 +66,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .header__links-container {
@@ -44,6 +81,7 @@ body {
 .links--blanco:hover {
   text-decoration: underline;
   color: #d9eb0f;
+  transition: 0.3s;
 }
 
 /* footer */
@@ -83,6 +121,7 @@ footer {
 
 .footer__social-icon:hover {
   opacity: 0.4;
+  transition: 0.3s;
 }
 
 .links--azul {
@@ -93,6 +132,7 @@ footer {
 .links--azul:hover {
   text-decoration: underline;
   color: #0076a3;
+  transition: 0.3s;
 }
 
 .footer__creditos {
@@ -131,6 +171,7 @@ footer {
 .btn--acido:hover {
   color: #030d12;
   background-color: #d9eb0f;
+  transition: 0.3s;
 }
 
 .btn--azul {
@@ -148,6 +189,7 @@ footer {
   border: 0.2rem solid #d9eb0f;
   background-color: #d9eb0f;
   color: #082735;
+  transition: 0.3s;
 }
 
 .btn--blanco {
@@ -163,6 +205,7 @@ footer {
 .btn--blanco:hover {
   background-color: #fefff4;
   color: #082735;
+  transition: 0.3s;
 }
 
 /* componentes */
@@ -746,10 +789,6 @@ article .nosotros__photos .nosotros__img3 {
 
 /* media queries */
 @media (max-width: 1240px) {
-  /* header */
-  .nav-bar {
-    flex-direction: column;
-  }
   /* inicio */
   section.hero {
     padding-inline: 8rem;
@@ -785,5 +824,20 @@ article .nosotros__photos .nosotros__img3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 1240px) {
+  .nav-burger {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
+  .nav-wraper {
+    display: flex;
+    position: static;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
