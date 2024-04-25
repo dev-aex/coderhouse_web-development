@@ -418,7 +418,7 @@ footer {
 .empresas__logos {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 12rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -445,6 +445,7 @@ footer {
 
 .proyectos__link:hover {
   opacity: 0.9;
+  transition: 0.6s;
 }
 
 .proyectos--uber {
