@@ -1,0 +1,73 @@
+/* blog */
+@mixin imagen-blog($url) {
+  background-image: url("#{$url}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.posts-container {
+  width: 100%;
+  height: fit-content;
+  padding-inline: 12rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.card-wraper:hover {
+  opacity: 0.5;
+}
+
+.blog-card__container {
+  width: auto;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.blog-card__header {
+  font-family: $tipo-primaria;
+  font-size: 2rem;
+  color: $acido;
+  text-align: center;
+}
+
+.blog-card__text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.img-container {
+  width: 36.8rem;
+  height: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.blog__img1 {
+  @include imagen-blog("../assets/img/blog/blog1.jpeg");
+}
+
+.blog__img2 {
+  @include imagen-blog("../assets/img/blog/blog2.jpeg");
+}
+
+.blog__img3 {
+  @include imagen-blog("../assets/img/blog/blog3.jpeg");
+}
+
+.blog__img4 {
+  @include imagen-blog("../assets/img/blog/blog4.jpeg");
+}
+
+.blog__img5 {
+  @include imagen-blog("../assets/img/blog/blog5.jpeg");
+}
+
+.blog__img6 {
+  @include imagen-blog("../assets/img/blog/blog6.jpeg");
+}

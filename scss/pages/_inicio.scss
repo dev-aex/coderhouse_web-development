@@ -1,0 +1,224 @@
+/* inicio */
+
+.hero {
+  padding-inline: 12.8rem;
+  margin-bottom: 29.7rem;
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__logo {
+  width: 100%;
+  height: 100%;
+  svg {
+    max-width: 100%;
+    min-width: 90%;
+  }
+  animation: fadeIn 2s ease forwards;
+}
+
+.hero__contenido {
+  max-width: 45rem;
+  min-width: 30rem;
+}
+
+.hero__titular {
+  margin-bottom: 1.8rem;
+
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 113%;
+  color: $acido;
+  animation: fadeIn 4s ease forwards;
+}
+
+.hero__texto {
+  margin-bottom: 3.2rem;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%;
+  animation: fadeIn 7s ease forwards;
+}
+
+.nosotros-inicio {
+  width: auto;
+  height: fit-content;
+  margin-bottom: 24.3rem;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2.4rem;
+  background-color: $claro;
+}
+
+.nosotros-inicio__img {
+  width: auto;
+  grid-column: 1 / 4;
+  background-image: url("../assets/img/nosotros_1920x1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nosotros-inicio__contenido {
+  padding-top: 8rem;
+  padding-right: 12.8rem;
+  grid-column: 4 / 6;
+}
+
+.nosotros-inicio__titular {
+  margin-bottom: 2.8rem;
+  font-family: $tipo-primaria;
+  font-size: 4.8rem;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+  line-height: 113%;
+  color: $azul-oscuro1;
+}
+
+.nosotros-inicio__texto {
+  margin-bottom: 7rem;
+  color: $azul-oscuro1;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.nosotros-inicio_video {
+  width: 100%;
+}
+
+.servicios-inicio {
+  margin-inline: 12.8rem;
+  margin-bottom: 24.3rem;
+}
+
+.section-header {
+  margin-bottom: 11.5rem;
+
+  text-align: center;
+  font-family: $tipo-primaria;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 113%;
+
+  background: $degradado1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.servicios-inicio__cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+
+.servicios-inicio__card {
+  width: 350px;
+  height: 272px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-inline: 1.8rem;
+
+  position: relative;
+
+  border-radius: 16px;
+  border: 2px dashed $azul-claro1;
+}
+
+.servicios-inicio__icon {
+  position: absolute;
+  right: 38%;
+  top: -18%;
+}
+
+.servicios-inicio__titular {
+  margin-bottom: 2rem;
+  color: $azul-claro1;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.servicios-inicio__texto {
+  margin-bottom: 1.6rem;
+  color: $azul-claro1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.proyectos-inicio {
+  width: auto;
+  height: 40.4rem;
+  padding-inline: 12.8rem;
+  margin-bottom: 24.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: url("../assets/img/proyectos_1920x1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100rem rgba(3, 13, 18, 0.7);
+}
+
+.proyectos-inicio__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.proyectos-inicio__titular {
+  margin-bottom: 2rem;
+  color: $claro;
+  text-align: right;
+  font-family: $tipo-primaria;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.empresas {
+  padding-inline: 12.8rem;
+  margin-bottom: 27.3rem;
+}
+
+.empresas__logos {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

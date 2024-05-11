@@ -1,0 +1,71 @@
+/* contacto */
+
+.contacto-main {
+  padding: 12rem;
+  background-color: $claro;
+  color: $azul-claro2;
+}
+
+.page__header--azul {
+  color: $azul-claro2;
+}
+
+.contacto-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12rem;
+}
+
+.contacto-form__container {
+  padding: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    label {
+      color: $azul-claro2;
+    }
+    input {
+      padding: 1rem;
+      height: 3%;
+      border: none;
+      border-bottom: 0.1rem solid $azul-claro2;
+      background-color: $claro;
+      color: $oscuro;
+    }
+    input:focus {
+      background-color: $acido;
+    }
+    textarea {
+      padding: 1rem;
+      color: $oscuro;
+    }
+    textarea:focus {
+      background-color: $acido;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.contacto-map__container {
+  .contacto-map__wrapper {
+    width: 100%;
+    iframe {
+      width: 100%;
+    }
+  }
+  .contacto-direccion {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    p {
+      color: $azul-claro2;
+    }
+  }
+}

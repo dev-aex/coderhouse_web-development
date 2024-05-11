@@ -1,0 +1,22 @@
+// globals
+@import "./base/variables";
+@import "./base/global";
+
+// Layouts
+@import "./layout/header";
+@import "./layout/footer";
+
+// Components
+@import "./components/buttons";
+@import "./components/headers";
+
+// Pages
+@import "./pages/inicio";
+@import "./pages/proyectos";
+@import "./pages/servicios";
+@import "./pages/nosotros";
+@import "./pages/blog";
+@import "./pages/contacto";
+
+// Queries
+@import "./layout/media-queries"

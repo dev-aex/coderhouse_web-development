@@ -1,0 +1,35 @@
+
+/* globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: $tipo-secundaria;
+  font-weight: 400;
+  font-style: normal;
+  color: $claro;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $degradado4_vertical;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+#nav-burger {
+  cursor: pointer;
+}

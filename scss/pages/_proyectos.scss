@@ -1,0 +1,67 @@
+/* proyectos */
+
+@mixin img-proyectos($url) {
+  background-image: url("#{$url}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+}
+
+.proyectos__container {
+  width: auto;
+  height: 49rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.proyectos__link {
+  opacity: 0.2;
+}
+
+.proyectos__link:hover {
+  opacity: 0.9;
+  transition: .600s;
+}
+
+.proyectos--uber {
+  @include img-proyectos("../assets/img/uber_1920x1280.jpg");
+}
+
+.proyectos--amazon {
+  @include img-proyectos("../assets/img/amazon_1920x2879.jpg");
+}
+
+.proyectos--cocacola {
+  @include img-proyectos("../assets/img/coca_1920x2400.jpg");
+}
+
+.proyectos__titular {
+  color: $acido;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 101%;
+  text-shadow: 0 0.2rem 1rem $azul-oscuro1;
+  text-shadow: 0 0.2rem 0rem $azul-oscuro1;
+  text-shadow: 0 0.2rem 0.5rem $azul-oscuro1;
+}
+
+.proyectos__texto {
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 101%;
+  text-shadow: 0 0.2rem 1rem $azul-oscuro1;
+  text-shadow: 0 0.2rem 0rem $azul-oscuro1;
+  text-shadow: 0 0.2rem 0.5rem $azul-oscuro1;
+}

@@ -233,6 +233,7 @@ footer {
 .hero__logo {
   width: 100%;
   height: 100%;
+  animation: fadeIn 2s ease forwards;
 }
 .hero__logo svg {
   max-width: 100%;
@@ -250,6 +251,7 @@ footer {
   font-weight: 700;
   line-height: 113%;
   color: #d9eb0f;
+  animation: fadeIn 4s ease forwards;
 }
 
 .hero__texto {
@@ -257,6 +259,7 @@ footer {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 120%;
+  animation: fadeIn 7s ease forwards;
 }
 
 .nosotros-inicio {
@@ -423,6 +426,14 @@ footer {
   flex-wrap: wrap;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* proyectos */
 .proyectos {
   display: flex;

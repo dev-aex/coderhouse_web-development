@@ -1,0 +1,170 @@
+/* media queries */
+
+@media (max-width: 1240px) {
+  /* inicio */
+  section.hero {
+    padding-inline: 8rem;
+    flex-direction: column;
+  }
+  .hero__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* header */
+  .header__links-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* inicio */
+  section.hero {
+    padding-inline: 4rem;
+  }
+
+  .contacto-main {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* footer */
+  .footer__links-containner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1240px) {
+  .nav-burger {
+    display: none;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .nav-wraper {
+    display: flex;
+    position: static;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+@media (max-width: 868px) {
+  .nosotros-inicio {
+    width: auto;
+    height: fit-content;
+    margin-bottom: 24.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nosotros-inicio__img {
+    width: 100%;
+    height: 45rem;
+  }
+
+  .nosotros-inicio__contenido {
+    padding-top: 0;
+    padding-right: 0;
+    padding: 6rem;
+    grid-row: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .proyectos-inicio {
+    height: fit-content;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .proyectos-logo {
+    width: 109px;
+    height: 176px;
+  }
+
+  .proyectos-inicio__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .proyectos-inicio__titular {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .servicios__card--left {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .servicios-card__content-left {
+      align-items: center;
+      text-align: center;
+    }
+
+    .servicios__img--brand {
+      width: 100%;
+      height: 20rem;
+      border-radius: 1rem;
+    }
+    .servicios__img--web {
+      width: 100%;
+      height: 20rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .servicios__card--right {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .servicios-card__content-right {
+      align-items: center;
+      text-align: center;
+    }
+    .servicios__img--product {
+      width: 100%;
+      height: 20rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .nosotros__content {
+    p {
+      font-size: 2rem;
+      text-align: center;
+      padding: 3rem;
+    }
+  }
+}

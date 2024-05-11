@@ -1,0 +1,72 @@
+
+.btn--secundario {
+  display: flex;
+  width: 14.6rem;
+  height: 4.6rem;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3rem;
+}
+
+.btn--acido {
+  width: 20.7rem;
+  height: 6.5rem;
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $acido;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 3rem;
+  border: 0.1rem solid $acido;
+}
+
+.btn--acido:hover {
+  color: $oscuro;
+  background-color: $acido;
+  transition: .300s;
+}
+
+.btn--azul {
+  border: 0.2rem solid $azul-claro1;
+
+  color: $azul-claro1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: $claro;
+}
+
+.btn--azul:hover {
+  border: 0.2rem solid $acido;
+  background-color: $acido;
+  color: $azul-oscuro1;
+  transition: .300s;
+}
+
+.btn--blanco {
+  border: 0.2rem solid $claro;
+
+  color: $claro;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn--blanco:hover {
+  background-color: $claro;
+  color: $azul-oscuro1;
+  transition: .300s;
+}

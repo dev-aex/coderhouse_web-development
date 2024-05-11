@@ -1,0 +1,15 @@
+// variables
+
+// tipografías
+$tipo-primaria: "Teko", sans-serif;
+$tipo-secundaria: "Ubuntu Mono", monospace;
+
+// colores
+$claro: #fefff4;
+$azul-oscuro1: #082735;
+$azul-claro2: #105981;
+$azul-claro1: #0076a3;
+$oscuro: #030d12;
+$acido: #d9eb0f;
+$degradado1: linear-gradient(90deg, $acido 0%, $azul-claro1 69.31%);
+$degradado4_vertical: linear-gradient(180deg, $azul-oscuro1 -3.21%, $oscuro 103.67%);
