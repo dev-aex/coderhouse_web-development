@@ -218,8 +218,17 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  animation: fadeIn 2s ease forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* inicio */
 .hero {
   padding-inline: 12.8rem;

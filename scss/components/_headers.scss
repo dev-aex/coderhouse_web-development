@@ -9,4 +9,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  animation: fadeIn 2s ease forwards;
+}
+
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
